@@ -1,0 +1,6 @@
+<resources>
+    <usb-accessory
+            version="0.1.0"
+            model="LedLamp"
+            manufacturer="Mariotti, Inc."/>
+</resources>

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".LedLamp"
+      >
+
+    <TextView
+        android:text="Available controlled devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_gravity="center_horizontal"/>
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LED13"
+            android:id="@+id/firstLed"
+            android:onClick="switchLight13"
+            android:layout_gravity="center_horizontal"/>
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LED12"
+            android:id="@+id/secondLed"
+            android:onClick="switchLight12"
+            android:layout_gravity="center_horizontal"/>
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Blink"
+            android:id="@+id/BlinkLed"
+            android:onClick="blinkLight"
+            android:layout_gravity="center_horizontal"/>
+
+    <EditText
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText" android:layout_gravity="center_horizontal" android:editable="false"
+            android:enabled="false" />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set delay"
+            android:onClick="setDelay"
+            android:id="@+id/button" android:layout_gravity="center_horizontal" android:enabled="false"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message Log\n"
+                android:id="@+id/textView"
+                android:layout_gravity="bottom" android:enabled="true" android:focusable="false"/>
+    </ScrollView>
+</LinearLayout>
